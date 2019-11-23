@@ -1,0 +1,8 @@
+html{
+  overflow: hidden;
+}
+canvas{
+  z-index: 2;
+}
+
+
