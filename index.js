@@ -40,7 +40,7 @@ class Snowflake{
         this.falling = true;
     }  
     NextPosY(){
-        if(this.y + this.dy >= h){
+        if(this.y + this.dy >= h-this.radius){
             return true;
         } else {
             return false;
@@ -50,7 +50,7 @@ class Snowflake{
         // Check if hit the ground
         if (this.NextPosY() || !this.falling){
             this.falling = false;
-            this.y = h-2*this.radius;
+            //this.y = h-2*this.radius;
             this.opacity -= 0.005;
         }
         // Only move falling snow
